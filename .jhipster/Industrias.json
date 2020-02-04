@@ -1,0 +1,35 @@
+{
+    "name": "Industrias",
+    "fields": [
+        {
+            "fieldName": "industria",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": 2,
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "categoria",
+            "fieldType": "Categoria",
+            "fieldValues": "BIENES,SERVICIOS,GOBIERNO,ONG"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200204064551",
+    "entityTableName": "industrias",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "Industrias",
+    "applications": "*",
+    "angularJSSuffix": "ngDo",
+    "microserviceName": "Industrias"
+}
