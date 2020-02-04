@@ -1,0 +1,20 @@
+entity Industrias {
+	industria String unique required minlength(2) maxlength(100),
+    categoria Categoria
+}
+
+enum Categoria {
+	BIENES, SERVICIOS, GOBIERNO, ONG
+}
+
+// Set pagination options
+paginate * with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+angularSuffix * with ngDo
